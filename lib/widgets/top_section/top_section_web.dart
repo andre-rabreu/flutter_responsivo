@@ -1,21 +1,22 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_responsivo/breakpoints.dart';
 
 class TopSectionWeb extends StatelessWidget {
   const TopSectionWeb({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
         children: [
         AspectRatio(
-          aspectRatio: 3,
-          child: Image(
+          aspectRatio: topSectionAspectRatio,
+          child: const Image(
             image: AssetImage('assets/banner.jpg'),
             fit: BoxFit.cover,
           ),
         ),
-        SizedBox(height: 48),
+        const SizedBox(height: 48),
       ]
     );
   }

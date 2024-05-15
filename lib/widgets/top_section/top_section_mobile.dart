@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_responsivo/breakpoints.dart';
 
 class TopSectionMobile extends StatelessWidget {
   const TopSectionMobile({super.key});
@@ -7,9 +8,9 @@ class TopSectionMobile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const AspectRatio(
-          aspectRatio: 3,
-          child: Image(
+        AspectRatio(
+          aspectRatio: topSectionAspectRatio,
+          child: const Image(
             image: AssetImage('assets/banner.jpg'),
             // height: 150,
             fit: BoxFit.cover,
