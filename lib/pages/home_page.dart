@@ -4,7 +4,7 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_responsivo/breakpoints.dart';
 import 'package:flutter_responsivo/widgets/app_bar/app_bar_web.dart';
 import 'package:flutter_responsivo/widgets/app_bar/app_bar_mobile.dart';
-import 'package:flutter_responsivo/widgets/favorite/favorite_widget_web.dart';
+import 'package:flutter_responsivo/widgets/favorite/favorite_widget.dart';
 import 'package:flutter_responsivo/widgets/top_section/top_section_mobile.dart';
 import 'package:flutter_responsivo/widgets/top_section/top_section_web.dart';
 
@@ -38,9 +38,9 @@ class HomePage extends StatelessWidget {
                   padding: EdgeInsets.symmetric(horizontal: 32.0),
                   child: Row(
                       children: [
-                        Expanded(child: FavoriteWidgetWeb()),
-                        Expanded(child: FavoriteWidgetWeb()),
-                        Expanded(child: FavoriteWidgetWeb()),
+                        Expanded(child: FavoriteWidget()),
+                        Expanded(child: FavoriteWidget()),
+                        Expanded(child: FavoriteWidget()),
                       ]
                   ),
                 ),
