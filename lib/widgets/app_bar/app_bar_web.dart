@@ -28,12 +28,21 @@ class AppBarWeb extends StatelessWidget {
                         color: Colors.grey[500],
                       ),
                     ),
-                    Text('Pesquise alguma coisa aqui',
-                      style: TextStyle(
-                        color: Colors.grey[500],
-                        fontSize: 16,
+                    Expanded(
+                      child: TextField(
+                        decoration: InputDecoration(
+                          border: InputBorder.none,
+                          hintText: 'Pesquise alguma coisa aqui',
+                          hintStyle: TextStyle(
+                            color: Colors.grey[500],
+                            fontSize: 16,
+                          ),
+                        ),
+                        style: const TextStyle(
+                          color: Colors.black,
+                          fontSize: 16,
+                        ),
                       ),
-                      textAlign: TextAlign.center,
                     ),
                   ]
                 ),
